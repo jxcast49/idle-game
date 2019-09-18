@@ -1,14 +1,14 @@
-var score = 0;
+var score = 1;
 
 postToPage(score); // Print to the page
 
-createButton('Button', btnPress); // Make a button
-changeTitle('Clicker Game');
+createButton('J', btnPress); // Make a button
+changeTitle('Boring Game');
 
-setInterval(btnPress, 1000);
+setInterval(btnPress, 800);
 
 function btnPress() {
   score++;
   postToPage(score);
 }
-
+createButton('J', btnPress); // Make a button
