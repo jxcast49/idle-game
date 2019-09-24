@@ -5,7 +5,7 @@ var button = new Button('hello', btnPress);   // Create a button element
 var hidden = new Button('Boo!', btnPress);
 hidden.hide();
 var scr = new Text(score);                    // Create a text element
-var button = new Button('hello', btnPress);   // Create a button element
+var hidden = new Button('Boo!', btnPress);
 
 changeTitle('Boring Game');
 
