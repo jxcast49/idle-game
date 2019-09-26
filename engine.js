@@ -111,6 +111,29 @@ class HTMLElement {
     let element = document.getElementById(this.id);
     return element;
   }
+  remove() {
+    // Removes an element from the document
+    var element = this.getElement();
+    element.parentNode.removeChild(element);
+  }
+  addClass(className) {
+    let element = this.getElement();
+    element.classList.add(className);
+  }
+  changeFont(font) {
+    let element = this.getElement();
+    element.style.fontFamily = font;
+  }
+  addBorder(color) {
+    this.style('border-style', 'solid');
+    this.style('border-width', '5px');
+    if(color) {
+      this.style('border-color', color);
+    }
+  }
+  removeBorder() {
+    this.style('border-style', 'none');
+  }
 }
 
 class Button extends HTMLElement {
